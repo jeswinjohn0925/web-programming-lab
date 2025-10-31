@@ -1,0 +1,27 @@
+<html>
+<body>
+<div class="a" id="a">
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" id="image" width="400"><br><br>
+<h1 id="text1">Taj Mahal, Agra</h1>
+<h1 id="text2" style="display:none;">The Colosseum, Rome</h1>
+</div>
+
+<script>
+document.getElementById("a").addEventListener("mouseover", ab);
+document.getElementById("a").addEventListener("mouseout", bc);
+
+function ab() {
+    document.getElementById('image').src = "https://upload.wikimedia.org/wikipedia/commons/e/e8/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg";
+    document.getElementById('text1').style.display = "none";
+    document.getElementById('text2').style.display = "block";
+}
+
+function bc() {
+    document.getElementById('image').src = "https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg";
+    document.getElementById('text1').style.display = "block";
+    document.getElementById('text2').style.display = "none";
+}
+</script>
+</body>
+</html>
+
